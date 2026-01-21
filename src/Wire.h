@@ -48,6 +48,7 @@ class TwoWire {
   void setClock(uint32_t bound);
   uint8_t beginTransmission(uint8_t);
   uint8_t endTransmission(uint8_t sendStop = 1);
+  uint8_t requestFrom(uint8_t, uint8_t);
   uint8_t requestFrom(uint8_t, uint8_t, uint8_t);
   uint8_t requestFrom(uint8_t address, uint8_t quantity, uint32_t iaddress, uint8_t isize, uint8_t sendStop);
   size_t write(uint8_t);

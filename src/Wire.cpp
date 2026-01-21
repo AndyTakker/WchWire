@@ -103,6 +103,10 @@ uint8_t TwoWire::endTransmission(uint8_t sendStop) {
   return I2C_OK;
 }
 
+uint8_t TwoWire::requestFrom(uint8_t address, uint8_t quantity) {
+  return requestFrom(address, quantity, 0, 0, true);
+}
+
 uint8_t TwoWire::requestFrom(uint8_t address, uint8_t quantity, uint8_t sendStop) {
   return requestFrom(address, quantity, 0, 0, sendStop);
 }
