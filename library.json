@@ -1,0 +1,19 @@
+{
+  "name": "WchWire",
+  "version": "1.0.0",
+  "description": "Wire library in Arduino style for CH32V003 and WCH RISC-V MCUs.",
+  "keywords": ["wire", "twi", "i2c", "CH32V003", "WCH", "RISC-V", "bare-metal"],
+  "authors": {
+    "name": "A. Kolesov",
+    "maintainer": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndyTakker/WchWire.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/AndyTakker/WchWire",
+  "frameworks": "*",
+  "platforms": ["wch-riscv"],
+  "headers": ["Wire.h"]
+}
