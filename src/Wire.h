@@ -1,13 +1,11 @@
 #ifndef WCH_WIRE_H
 #define WCH_WIRE_H
 
-#include "ch32v00x_conf.h"
 #include <debug.h>
-// #ifdef ARDUINO
-// #include <Arduino.h>
-// #endif
 
+#ifndef TIMEOUT_MAX
 #define TIMEOUT_MAX 1000 // Тайм аут ожидания ответа, задается в количестве попыток
+#endif
 
 #if !defined(WIRE_RX_BUFFER_LENGTH)
 #define WIRE_RX_BUFFER_LENGTH 32 // Размер статического буфера для чтения
