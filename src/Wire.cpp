@@ -85,6 +85,7 @@ uint8_t TwoWire::endTransmission(uint8_t sendStop) {
   }
 
   // Отправка данных
+  timeout = TIMEOUT_MAX*2;  // Здесь таймаут нужно побольше
   for (uint16_t i = 0; i < txBufferLength; i++) {
     I2C_SendData(i2c_periph, txBuffer[i]);
     while ((!I2C_CheckEvent(i2c_periph, I2C_EVENT_MASTER_BYTE_TRANSMITTED)) && --timeout)
